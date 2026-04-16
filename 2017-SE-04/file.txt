@@ -1,0 +1,3 @@
+./dir/file1_symlink2.txt -> file1.txt
+./dir/file1_symlink.txt -> file1.txt
+Broken symlinks: 2

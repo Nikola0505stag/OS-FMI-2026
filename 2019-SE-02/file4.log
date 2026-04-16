@@ -1,0 +1,6 @@
+[2026-04-12 14:00:10] ID:501 action:LOGIN status:SUCCESS user:ivanov
+[2026-04-12 14:02:15] ID:501 action:DELETE_FILE status:PERMISSION_DENIED path:/etc/shadow
+[2026-04-12 14:05:00] ID:502 action:LOGIN status:SUCCESS user:petrova
+[2026-04-12 14:10:33] ID:501 action:LOGOUT status:SUCCESS user:ivanov
+[2026-04-12 15:00:00] ID:502 action:DOWNLOAD status:SUCCESS file:report_2026.pdf
+[2026-04-12 15:30:12] ID:999 action:LOGIN status:FAILED user:unknown_bot

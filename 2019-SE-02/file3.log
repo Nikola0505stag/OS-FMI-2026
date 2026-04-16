@@ -1,0 +1,6 @@
+2026-04-15 03:00:01 web-prod systemd[1]: Starting Daily apt upgrade and clean activities...
+2026-04-15 04:12:10 web-prod kernel: [12345.678] out_of_memory: Kill process 987 (java) score 850 or sacrifice child
+2026-04-15 04:12:10 web-prod kernel: [12345.679] Killed process 987 (java) total-vm:4GB, anon-rss:3.5GB
+2026-04-15 06:25:00 web-prod rsyslogd: rsyslogd was HUPed
+2026-04-15 10:44:12 web-prod apache2[550]: [error] client 172.16.0.5: File does not exist: /var/www/html/favicon.ico
+2026-04-16 11:20:30 web-prod kernel: [15420.123] python3[1204]: segfault at 0 ip 00007f89c sp 00007ffe error 4 in python3

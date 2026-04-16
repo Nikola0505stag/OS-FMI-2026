@@ -1,0 +1,4 @@
+Код за задачата в терминала
+
+find . -type f -exec sh -c 'stat "$1" | awk "NR==1 {res=\$2} NR==3 {print res, \$6}"' _ {} \; | sort -k 2 -nr | head -n 5
+

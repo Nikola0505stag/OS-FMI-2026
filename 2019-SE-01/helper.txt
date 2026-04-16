@@ -1,0 +1,23 @@
+Решения на задачата от команди в сборника:
+
+awk -F ';' '
+    NR == FNR {
+        if (NR > 1 && ($3 > max_dist || max_dist == "")) {
+            max_dist = $3;
+            target_type = $2;
+        }
+        next;
+    }
+    $2 == target_type {
+        if (min_dist == "" || $3 < min_dist) {
+            min_dist = $3;
+            result_name = $1;
+            result_mass = $4;
+        }
+    }
+    END {
+        print result_name "\t" result_mass
+    }
+
+' planets.txt planets.txt
+

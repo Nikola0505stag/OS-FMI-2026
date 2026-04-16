@@ -1,0 +1,4 @@
+Решение на задача 13 от сборника
+
+cat space.txt | tail -n +2 | cut -d '|' -f 2,3 | sort | uniq -c | awk '$1 = $1' | grep 'Failure' | head -n 1 | cut -d '|' -f 1 | cut -d " " -f 2 | xargs -I {} grep -E '{}' space.txt | sort -k 1 -n | cut -d '|' -f 2,3,4 | head -n 1 | tr '|' ':'
+

@@ -1,0 +1,4 @@
+04 зад от сборника ( съвпадат имената със скрипт )
+
+cat /etc/passwd | grep -E ".*,I.*" | grep -E ".*а,.*" | cut -d : -f 1 | awk -F "" '{print $3 $4}' | sort | uniq -c | awk '$1 = $1 {print}' | sort | head -n 1
+
